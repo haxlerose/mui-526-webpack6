@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
-// import ReactDOM from 'react-dom'
-// import * as React from 'react'
-// import MUIComponent from '@mui/material/MUIComponentName'
+import ReactDOM from 'react-dom'
+import * as React from 'react'
+import TextField from '@mui/material/TextField'
 
 export default class extends Controller {
   static targets = ['renderElement']
@@ -10,7 +10,7 @@ export default class extends Controller {
   connect() {
     console.log('Home Controller Connected')
     console.log(this.dataValue)
-    // ReactDOM.render(this.elementToRender(), this.renderElementTarget)
+    ReactDOM.render(this.elementToRender(), this.renderElementTarget)
   }
 
   elementToRender() {
@@ -18,6 +18,6 @@ export default class extends Controller {
     const dataTwo = this.dataValue['dataKey2']
     const dataThree = this.dataValue['dataKey3']
 
-    // return <MUIComponent></MUIComponent>
+    return <TextField />
   }
 }
