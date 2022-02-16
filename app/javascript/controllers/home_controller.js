@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 import ReactDOM from 'react-dom'
 import * as React from 'react'
-import TextField from '@mui/material/TextField'
+// import MUIComponent from '@mui/material/MUIComponentName'
 
 export default class extends Controller {
   static targets = ['renderElement']
@@ -18,6 +18,6 @@ export default class extends Controller {
     const dataTwo = this.dataValue['dataKey2']
     const dataThree = this.dataValue['dataKey3']
 
-    return <TextField />
+    // return <MUIComponent></MUIComponent>
   }
 }
